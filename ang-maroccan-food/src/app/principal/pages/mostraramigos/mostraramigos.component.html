@@ -1,0 +1,27 @@
+<header>
+    <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+</header>
+ 
+<nav>
+    <p-menubar [model]="items"></p-menubar>
+</nav>
+  
+<main>
+    <p-carousel *ngIf="listaAmigos.length>0" [value]="listaAmigos" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="5000" [responsiveOptions]="responsiveOptions">
+      <ng-template let-user pTemplate="item">
+          <div class="user-item">
+              <div class="user-item-content">
+                  <div class="mb-3">
+                      <img src="assets/images/Amigos.jpg" [alt]="user.nombre" class="user-image" />
+                  </div>
+                  <div>
+                      <h4 class="mb-1">{{user.nombre}} {{user.apellidos}}</h4>
+                      <div class="mb-1">{{user.email}}</div>
+                  </div>
+              </div>
+          </div>
+      </ng-template>
+    </p-carousel>
+</main>
+  
+<footer></footer>  

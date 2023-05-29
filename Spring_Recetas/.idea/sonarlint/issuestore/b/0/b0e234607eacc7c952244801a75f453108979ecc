@@ -1,0 +1,18 @@
+
+g	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8şÔí·ÿ0
+l
+java:S1192/"QDefine a constant instead of duplicating this literal "    <tbody><tr>
+" 3 times.(›Ä—•şÿÿÿÿ
+c
+java:S1192F"MDefine a constant instead of duplicating this literal "      </td>
+" 3 times.(ıÁÚõ
+f
+java:S1192G"KDefine a constant instead of duplicating this literal "    </tr>
+" 5 times.(úÒ¶ÿÿÿÿÿ
+e
+java:S11921"JDefine a constant instead of duplicating this literal "        
+" 6 times.(¿İ±Öùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª’Çùÿÿÿÿ
+d	java:S116"ORename this field "LINK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºîã³
+7
+java:S1170"!Make this final field static too.(ºîã³

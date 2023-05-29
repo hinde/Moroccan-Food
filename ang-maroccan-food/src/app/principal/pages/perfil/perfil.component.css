@@ -1,0 +1,6 @@
+.box {
+    position: absolute;
+    left: 40%;
+    width: 400px;
+    /* -1/2 width */
+  }

@@ -1,0 +1,54 @@
+<header>
+  <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}" (onClose)="redirectLogin()"></p-toast>
+</header>
+
+<main>
+  <form [formGroup]="myFormRegistro" (ngSubmit)="submitFormulario()">
+    <h1>Registro</h1>
+    <div class="container">
+        <label for="inputtext">Nombre *</label>
+        <input pInputText formControlName="nombre" [class.is-invalid]="f.nombre.errors && f.nombre.touched" type="text" class="form-control" id="inputtext" placeholder="Ingresa tu nombre"> <!--[(ngModel)]="username"-->
+      </div>
+    
+      <div class="container">
+        <label for="apellidos" class="form-label">Apellidos *</label>
+        <input pInputText formControlName="apellidos" [class.is-invalid]="f.apellidos.errors && f.apellidos.touched" type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos">
+      </div>
+  
+      <div class="container">
+        <label for="sexo">Sexo</label>
+        <select formControlName="sexo" [class.is-invalid]="f.sexo.errors && f.sexo.touched" 
+        type="select" class="form-control" id="sexo">
+          <option value="HOMBRE">HOMBRE</option>
+          <option value="MUJER">MUJER</option>
+        </select>
+      </div>
+  
+      <div class="container">
+        <label for="email" class="form-label">Email *</label>
+        <input pInputText formControlName="email" [class.is-invalid]="f.email.errors && f.email.touched" type="text" class="form-control" id="email" placeholder="Ingresa tu email">
+      </div>
+  
+      <div class="container">
+        <label for="password" class="form-label">Contraseña *</label>
+        <div></div>
+        <p-password formControlName="password" [class.is-invalid]="f.password.errors && f.password.touched" class="form-control" id="password" [feedback]="false"></p-password>
+      </div>
+  
+      <div class="container">
+        <label for="passwordRepeat" class="form-label">Verificar Contraseña *</label>
+        <div></div>
+        <p-password formControlName="passwordRepeat" [class.is-invalid]="f.passwordRepeat.errors && f.passwordRepeat.touched" class="form-control" id="passwordRepeat" [feedback]="false"></p-password>
+      </div>
+  
+      <div class="container">
+        <button pButton label="Registrar" class="p-button-succes"></button>
+      </div>
+  </form>
+</main>
+
+<footer>
+  <div class="container signin">
+    <p>¿Ya tiene una cuenta? <a href="login">Iniciar Sesión</a>.</p>
+  </div>
+</footer>

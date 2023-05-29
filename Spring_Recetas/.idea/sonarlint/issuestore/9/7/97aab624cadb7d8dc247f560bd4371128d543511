@@ -1,0 +1,23 @@
+
+h
+java:S1104"RMake Nombre a static final constant or non-public and provide accessors if needed.(ýÈ®ô
+k
+java:S1104"UMake Apellidos a static final constant or non-public and provide accessors if needed.(¦•Í±
+k
+java:S1104"PMake Sexo a static final constant or non-public and provide accessors if needed.(¢á×Ûúÿÿÿÿ
+e
+java:S1104"OMake Rol a static final constant or non-public and provide accessors if needed.(ìØˆÑ
+l
+java:S1104"QMake Email a static final constant or non-public and provide accessors if needed.(­³îØüÿÿÿÿ
+q
+java:S1104"VMake Contrasena a static final constant or non-public and provide accessors if needed.(‰ï”Ýùÿÿÿÿ
+r
+java:S1104"]Make SegundaContrasena a static final constant or non-public and provide accessors if needed.(©õ¨R
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ÉŽÜ
+f	java:S116"QRename this field "Nombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ýÈ®ô
+i	java:S116"TRename this field "Apellidos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦•Í±
+i	java:S116"ORename this field "Sexo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢á×Ûúÿÿÿÿ
+c	java:S116"NRename this field "Rol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìØˆÑ
+j	java:S116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­³îØüÿÿÿÿ
+o	java:S116"URename this field "Contrasena" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ï”Ýùÿÿÿÿ
+p	java:S116"\Rename this field "SegundaContrasena" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©õ¨R

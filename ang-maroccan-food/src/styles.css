@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.full-background {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+  
+    /* Background */
+    background: url('/assets/images/background.jpg') center center / cover no-repeat;
+  }

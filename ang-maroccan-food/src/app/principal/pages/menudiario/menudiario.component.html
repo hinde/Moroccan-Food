@@ -1,0 +1,26 @@
+<header>
+    <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+</header>
+  
+<nav>
+    <p-menubar [model]="items"></p-menubar>
+</nav>
+  
+<main>
+    <h1>{{dia}}</h1>
+    <p-panel header="Desayuno">
+        <p>{{nombreDesayuno}}</p>
+        <button pButton label="Ver" (click)="verDesayuno()"></button>
+    </p-panel>
+    <p-panel header="Comida">
+        <p>{{nombreComida}}</p>
+        <button pButton label="Ver" (click)="verComida()"></button>
+    </p-panel>
+    <p-panel header="Cena">
+        <p>{{nombreCena}}</p>
+        <button pButton label="Ver" (click)="verCena()"></button>
+    </p-panel>
+</main>
+  
+<footer>
+</footer> 

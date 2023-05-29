@@ -1,0 +1,10 @@
+ /* Center the avatar image inside this container */
+ .imgcontainerPrincipal {
+    text-align: center;
+    margin: 4px 0 4px 0;
+  }
+
+  body {
+    background-color: #ddd;
+    font-family: Arial, sans-serif;
+}

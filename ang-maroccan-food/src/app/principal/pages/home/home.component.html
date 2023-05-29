@@ -1,0 +1,39 @@
+<header>
+  <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+</header>
+
+<nav>
+  <p-menubar [model]="items">
+    <ng-template pTemplate="end">
+      <input type="text" pInputText [(ngModel)]="buscar" placeholder="Buscar">
+      <button pButton label="Buscar" icon="pi pi-search" (click)="buscarReceta()"></button>
+    </ng-template>
+  </p-menubar>
+</nav>
+
+<main>
+  <p-carousel *ngIf="recetas.length>0 && showHome" [value]="recetas" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="5000" [responsiveOptions]="responsiveOptions">
+    <ng-template let-product pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="mb-3">
+                    <img src="assets/images/R.jpg" [alt]="product.name" class="product-image" />
+                </div>
+                <div>
+                    <h4 class="mb-1">{{product.nombre}}</h4>
+                    <div class="car-buttons mt-5">
+                        <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="pi pi-eye"
+                        (onClick)="infoReceta(product.id)"></p-button>
+                        <p-button *ngIf="user.rol=='ROLE_ADMIN'" type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-times-circle"
+                        (onClick)="eliminarReceta(product.id)"></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+  </p-carousel>
+
+</main>
+
+<footer>
+</footer>

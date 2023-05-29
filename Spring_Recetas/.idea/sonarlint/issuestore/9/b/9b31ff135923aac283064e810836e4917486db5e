@@ -1,0 +1,8 @@
+
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(‡œ£ÿÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó„Ğ
+k	java:S116"QRename this field "Nombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş¾Îüÿÿÿÿ
+h	java:S116!"TRename this field "Apellidos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı¤‡
+i	java:S116%"ORename this field "Sexo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾şµœşÿÿÿÿ
+j	java:S116,"URename this field "Contrasena" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úİáş

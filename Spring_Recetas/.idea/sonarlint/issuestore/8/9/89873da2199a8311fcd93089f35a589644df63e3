@@ -1,0 +1,36 @@
+
+o
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293K"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293["YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293j"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+v
+java:S2293s"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À8ƒÈ±Þþ0
+w
+java:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À8„È±Þþ0
+w
+java:S2293®"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À8êíê·ÿ0
+[
+java:S11922"FDefine a constant instead of duplicating this literal "error" 4 times.(ó ’a
+?
+java:S5411<"*Use the primitive boolean expression here.(¤ŽÿP
+L
+java:S5411D"*Use the primitive boolean expression here.(ÜµÙ„üÿÿÿÿ8ìíê·ÿ0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü‚±Ž
+<
+java:S1170$"!Make this final field static too.(š Ðöúÿÿÿÿ
+<
+java:S1452*"&Remove usage of generic wildcard type.(µ—Ë€
+c	java:S100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿àÐÙ
+<
+java:S1452_"&Remove usage of generic wildcard type.(¿àÐÙ
+C
+java:S1452—"&Remove usage of generic wildcard type.(‡®ä'8¾È±Þþ0
+[	java:S106š"9Replace this use of System.out or System.err by a logger.(šµ‹Èþÿÿÿÿ8¾È±Þþ0
+e
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›

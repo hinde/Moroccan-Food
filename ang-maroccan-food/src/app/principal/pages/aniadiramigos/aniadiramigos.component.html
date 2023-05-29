@@ -1,0 +1,31 @@
+<header>
+    <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+</header>
+
+<nav>    
+    <p-menubar [model]="items">
+    </p-menubar>
+</nav>
+
+<main>
+    <p-carousel *ngIf="listaUsuarios.length>0" [value]="listaUsuarios" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="5000" [responsiveOptions]="responsiveOptions">
+        <ng-template let-usuarios pTemplate="item">
+            <div class="usuarios-item">
+                <div class="usuarios-item-content">
+                    <div class="mb-3">
+                        <img src="assets/images/Amigos.jpg" [alt]="usuarios.name" class="usuarios-image" />
+                    </div>
+                    <div>
+                        <h4 class="mb-1">{{usuarios.nombre}} {{usuarios.apellidos}}</h4>
+                        <div class="car-buttons mt-5">
+                            <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="pi pi-plus-circle"
+                            (onClick)="aniadirAmigo(usuarios.id)"></p-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+      </p-carousel>
+</main>
+
+<footer></footer>

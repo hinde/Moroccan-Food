@@ -1,0 +1,25 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ø—†şÿÿÿÿ
+k	java:S116$"QRename this field "HEADER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú›¶ùÿÿÿÿ
+k	java:S116%"QRename this field "PREFIX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÜ›‡ûÿÿÿÿ
+f	java:S116&"QRename this field "SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­©´î
+<
+java:S1170$"!Make this final field static too.(Ú›¶ùÿÿÿÿ
+<
+java:S1170%"!Make this final field static too.(ŸÜ›‡ûÿÿÿÿ
+7
+java:S1170&"!Make this final field static too.(­©´î
+1
+java:S3626>"Remove this redundant jump.(ûÁİ…
+L
+java:S1905="6Remove this unnecessary cast to "HttpServletResponse".(áºÂŒ
+@
+java:S1172U"*Remove this unused method parameter "res".(Ø¾¬
+W
+java:S1126W"AReplace this if-then-else statement by a single return statement.(à˜»
+Q
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ
+e
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›

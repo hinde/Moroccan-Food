@@ -1,0 +1,146 @@
+<header>
+    <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+  </header>
+
+  <nav>
+    <p-menubar [model]="items">
+    </p-menubar>
+  </nav>
+  
+  <main>
+
+        <div class="container" pFocusTrap>
+          <label for="inputtext">Nombre Receta</label>
+          <div></div>
+          <input id="inputtext" pInputText [(ngModel)]="nombreReceta">
+        </div>
+
+        <div class="container" pFocusTrap>
+          <label for="tipo" class="form-label">Tipo Receta</label>
+          <div></div>
+          <p-dropdown [options]="tipo"  [showClear]="false"  id="tipo" [(ngModel)]="tipoReceta"></p-dropdown>
+        </div>
+    
+        <div class="container" pFocusTrap>
+          <label for="ingrediente" class="form-label">Nombre del Ingrediente</label>
+          <div></div>
+          <input id="ingrediente" pInputText [(ngModel)]="nombreIngrediente">
+        </div>
+
+        <div class="container field col-12 md:col-3">
+          <label for="cantidad">Cantidad</label>
+          <div></div>
+          <input [(ngModel)]="cantidad" inputId="cantidad" pInputText>
+        </div>
+
+        <div class="container">
+          <button pButton label="Agrega Ingrediente"  (click)="agregaIngredienteTabla()"></button>
+        </div>
+
+        <div class="container" pFocusTrap>
+          <label for="paso">Paso</label>
+          <div></div>
+          <textarea id="paso" rows="10" cols="50" pInputTextarea [(ngModel)]="paso"></textarea>
+        </div>
+
+        <div class="container">
+          <button pButton label="Agrega Paso"  (click)="agregaPasoTabla()"></button>
+        </div>
+
+        <div class="container" pFocusTrap>
+          <label for="video">Video</label>
+          <!--<p-fileUpload id="video" mode="basic" accept="video/*" [(ngModel)]="url" (onSelect)="elegirArchivo($event)" (onUpload)="elegirArchivo($event)">
+            <ng-template let-file pTemplate="file">
+              <label>file.url</label>
+            </ng-template>
+
+            <ng-template pTemplate="content">
+                  <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+            </ng-template>
+          </p-fileUpload>-->
+
+          <p-fileUpload name="demo[]" [customUpload]="true" (onSelect)="elegirArchivo($event)" accept="video/*" [showUploadButton]="false">
+            <ng-template pTemplate="content">
+                <!--<ul *ngIf="uploadedFiles.length">
+                    <li *ngFor="let file of uploadedFiles">{{file.name}} </li>
+                </ul>-->
+            </ng-template>
+          </p-fileUpload>
+        </div>    
+  </main>
+  
+  <footer>
+    
+    <div class="container">
+      <!--Tabla para los ingredientes-->
+      <p-table [value]="ingredientes" dataKey="id" responsiveLayout="scroll">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th>Nombre Ingrediente</th>
+            <th>Cantidad</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-ingrediente let-columns="columns" let-index="rowIndex">
+          <tr>
+            <td pEditableColumn>
+              <p-cellEditor>
+                  <ng-template pTemplate="input">
+                      <input pInputText type="text" [(ngModel)]="ingrediente.nombre" required>
+                  </ng-template>
+                  <ng-template pTemplate="output">
+                      {{ingrediente.nombre}}
+                  </ng-template>
+              </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+              <p-cellEditor>
+                  <ng-template pTemplate="input">
+                      <input pInputText type="number" [(ngModel)]="ingrediente.cantidad" required>
+                  </ng-template>
+                  <ng-template pTemplate="output">
+                      {{ingrediente.cantidad}}
+                  </ng-template>
+              </p-cellEditor>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+
+
+          <div class="container">
+            <!--Tabla para los pasos-->
+            <p-table [value]="pasos" dataKey="id" responsiveLayout="scroll">
+              <ng-template pTemplate="header" let-columns>
+                <tr>
+                  <th style="width:3rem"></th>
+                  <th>Paso</th>
+                </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-paso let-columns="columns" let-index="rowIndex">
+                <tr [pReorderableRow]="index">
+                  <td>
+                    <span class="pi pi-bars" [pReorderableRowHandle]="index"></span>
+                  </td>
+                  <td pEditableColumn>
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input pInputText type="text" [(ngModel)]="paso.descripcion" required>
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{paso.descripcion}}
+                        </ng-template>
+                    </p-cellEditor>
+                  </td>
+                </tr>
+              </ng-template>
+            </p-table>
+          </div>
+
+
+      <div class="container">
+        <button pButton label="Crear Receta"  (click)="crearReceta()"></button>
+      </div>
+    
+    
+  </footer>

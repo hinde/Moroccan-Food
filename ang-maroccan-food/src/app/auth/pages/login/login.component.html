@@ -1,0 +1,27 @@
+
+<link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+<header>
+  <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+
+  <div class="p-input-filled">
+    <div>
+      <label for="inputtext">Usuario</label>
+      <div></div>
+      <input type="text" id="inputtext" pInputText [(ngModel)]="username">
+    </div>
+    <div>
+      <label for="pass">Contraseña</label>
+      <div></div>
+      <p-password id="pass" [(ngModel)]="password" [feedback]="false"></p-password>
+    </div>
+  </div>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+  <button pButton label="Iniciar sesión" (click)="login()"></button>
+  <button pButton label="Registrate aquí"  (click)="pageRegistro()"></button>
+</footer>

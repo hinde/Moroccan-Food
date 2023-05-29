@@ -1,0 +1,42 @@
+
+E
+java:S37404"/Provide the parametrized type for this generic.(½Ê»í
+E
+java:S3740["/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740…"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740¢"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740¯"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740·"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740Î"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740Ó"/Provide the parametrized type for this generic.(½Ê»í
+o
+java:S2293v"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293z"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+a
+java:S11923"FDefine a constant instead of duplicating this literal "error" 3 times.(ùâ‚ßÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü‚±Ž
+c	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Û–î
+<
+java:S1452)"&Remove usage of generic wildcard type.(¬Û–î
+9
+java:S21198"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
+D
+java:S5413O")Verify that "remove()" is used correctly.(‡öÒ«þÿÿÿÿ
+c	java:S100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û½þÇ
+<
+java:S1452_"&Remove usage of generic wildcard type.(û½þÇ
+d	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ôß´
+=
+java:S1452€"&Remove usage of generic wildcard type.(™ôß´
+d	java:S100¦"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¸ˆ¶
+=
+java:S1452¦"&Remove usage of generic wildcard type.(ó¸ˆ¶
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ

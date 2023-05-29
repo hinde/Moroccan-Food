@@ -1,0 +1,92 @@
+<header>
+  <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+</header>
+
+<p-menubar [model]="items"></p-menubar>
+
+<main>
+  <h1>{{nombreReceta}}</h1>
+  <p-fieldset legend="Ingredientes">
+    <p-table [value]="ingredientes" dataKey="id" responsiveLayout="scroll">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th>Nombre</th>
+          <th>Cantidad</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-ingrediente let-columns="columns" let-index="rowIndex">
+        <tr>
+          <td pEditableColumn>
+            <p-cellEditor>
+                <ng-template pTemplate="input">
+                    <input pInputText type="text" [(ngModel)]="ingrediente.nombre" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                    {{ingrediente.nombre}}
+                </ng-template>
+            </p-cellEditor>
+          </td>
+          <td pEditableColumn>
+            <p-cellEditor>
+                <ng-template pTemplate="input">
+                    <input pInputText type="number" [(ngModel)]="ingrediente.cantidad" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                    {{ingrediente.cantidad}}
+                </ng-template>
+            </p-cellEditor>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-fieldset>
+
+  <p-fieldset legend="Pasos">
+    <p-table [value]="pasos" dataKey="id" responsiveLayout="scroll">
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th style="width:3rem"></th>
+          <th>Paso</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-paso let-columns="columns" let-index="rowIndex">
+        <tr [pReorderableRow]="index">
+          <td>
+            <span class="pi pi-bars" [pReorderableRowHandle]="index"></span>
+          </td>
+          <td pEditableColumn>
+            <p-cellEditor>
+                <ng-template pTemplate="input">
+                    <input pInputText type="text" [(ngModel)]="paso.descripcion" required>
+                </ng-template>
+                <ng-template pTemplate="output">
+                    {{paso.descripcion}}
+                </ng-template>
+            </p-cellEditor>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-fieldset>
+
+  <p-fieldset legend="Video" *ngIf="muestraVideo">
+    <!--<p>{{url}}</p>-->
+    <!--<button pButton label="Ver"  (click)="pageRegistro()"></button>-->
+
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <video id="myvideo" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+      <source src="assets/videos/{{url}}" type="video/mp4" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+  </p-fieldset>
+</main>
+
+<footer>
+  <button pButton label="Actualizar"  (click)="actualizar()"></button>
+</footer>

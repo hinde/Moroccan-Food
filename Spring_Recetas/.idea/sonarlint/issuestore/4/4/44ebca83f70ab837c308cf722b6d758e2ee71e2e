@@ -1,0 +1,71 @@
+
+E
+java:S3740Z"/Provide the parametrized type for this generic.(½Ê»í
+E
+java:S3740k"/Provide the parametrized type for this generic.(½Ê»í
+E
+java:S3740s"/Provide the parametrized type for this generic.(½Ê»í
+E
+java:S3740z"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740ƒ"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740”"/Provide the parametrized type for this generic.(éò•‡
+F
+java:S3740¥"/Provide the parametrized type for this generic.(éò•‡
+F
+java:S3740µ"/Provide the parametrized type for this generic.(éò•‡
+F
+java:S3740½"/Provide the parametrized type for this generic.(½Ê»í
+F
+java:S3740Ë"/Provide the parametrized type for this generic.(½Ê»í
+t
+java:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(î¼Ø“ÿÿÿÿÿ
+o
+java:S2293G"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293K"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+[
+java:S1192:"FDefine a constant instead of duplicating this literal "error" 5 times.(ó ’a
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü‚±
+h	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¸‰‰şÿÿÿÿ
+A
+java:S1452""&Remove usage of generic wildcard type.(í¸‰‰şÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(“õ“¹
+Q	java:S125("<This block of commented-out lines of code should be removed.(¥¼Û
+Y
+java:S11558">Use isEmpty() to check whether the collection is empty or not.(‘ØŠııÿÿÿÿ
+Y
+java:S11558">Use isEmpty() to check whether the collection is empty or not.(‘ØŠııÿÿÿÿ
+Q	java:S125A"<This block of commented-out lines of code should be removed.(–Åëÿ
+h	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š¨ıøÿÿÿÿ
+A
+java:S1452P"&Remove usage of generic wildcard type.(š¨ıøÿÿÿÿ
+c	java:S100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Àéß
+<
+java:S1452^"&Remove usage of generic wildcard type.(¾Àéß
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(—õÖë
+2
+java:S1116b"Remove this empty statement.(ÏÔÙ«
+c	java:S100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ„¾
+<
+java:S1452o"&Remove usage of generic wildcard type.(ˆ„¾
+h	java:S100w"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì´ª†øÿÿÿÿ
+A
+java:S1452w"&Remove usage of generic wildcard type.(ì´ª†øÿÿÿÿ
+c	java:S100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ä§´
+<
+java:S1452~"&Remove usage of generic wildcard type.(“ä§´
+B
+java:S1452‡"&Remove usage of generic wildcard type.(ï¹¸ìüÿÿÿÿ
+N	java:S106Š"9Replace this use of System.out or System.err by a logger.(…Ã­
+R	java:S125™"<This block of commented-out lines of code should be removed.(¥¼Û
+Z
+java:S1155Ÿ">Use isEmpty() to check whether the collection is empty or not.(¯¦‘îúÿÿÿÿ
+Z
+java:S1155¯">Use isEmpty() to check whether the collection is empty or not.(£®ëÅøÿÿÿÿ
+=
+java:S1452Ã"&Remove usage of generic wildcard type.(ıíÿ
+T	java:S106Ä"9Replace this use of System.out or System.err by a logger.(ı¿ñáûÿÿÿÿ
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ

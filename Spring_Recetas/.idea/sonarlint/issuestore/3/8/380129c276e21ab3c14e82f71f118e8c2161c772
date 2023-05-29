@@ -1,0 +1,23 @@
+
+o
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293="YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o
+java:S2293P"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î•™À
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü‚±
+c	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜±
+<
+java:S1452!"&Remove usage of generic wildcard type.(˜±
+c	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙÜãí
+<
+java:S14522"&Remove usage of generic wildcard type.(ÙÜãí
+c	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üœä
+<
+java:S1452E"&Remove usage of generic wildcard type.(üœä
+Z
+java:S1128"8Remove this unused import 'org.modelmapper.ModelMapper'.(ó¿Ôúÿÿÿÿ8³ÀÙ·ÿ0
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ

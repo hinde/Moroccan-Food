@@ -1,0 +1,10 @@
+
+`	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(»ÃÑ³øÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü‚±Ž
+i	java:S116"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¾Žæüÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(å¾Žæüÿÿÿÿ
+<
+java:S1452!"&Remove usage of generic wildcard type.(¼¾Ñ«
+<
+java:S14526"&Remove usage of generic wildcard type.(ÿÒà

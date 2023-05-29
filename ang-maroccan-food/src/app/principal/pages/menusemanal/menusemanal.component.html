@@ -1,0 +1,71 @@
+<header>
+    <p-toast position="top-right" [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+</header>
+  
+<nav>
+    <p-menubar [model]="items"></p-menubar>
+</nav>
+  
+<main>
+    <h1>Menu Semanal</h1>
+    <p-fieldset legend="Lunes">
+        <p-table [value]="menuSemanal.menus" responsiveLayout="scroll">
+            <ng-template pTemplate="body" let-menu>
+                <tr *ngIf="menu.dia=='LUNES'">{{menu.desayuno.nombre}}</tr>
+                <tr *ngIf="menu.dia=='LUNES'">{{menu.comida.nombre}}</tr>
+                <tr *ngIf="menu.dia=='LUNES'">{{menu.cena.nombre}}</tr>
+            </ng-template>
+        </p-table>
+        <!--<button pButton label="Ver"  (click)="pageRegistro()"></button>-->
+        <button pButton label="Ver" (click)="verMenu('LUNES')"></button>
+    </p-fieldset>
+    <p-fieldset legend="Martes">
+        <p-table [value]="menuSemanal.menus" responsiveLayout="scroll">
+            <ng-template pTemplate="body" let-menu>
+                <tr *ngIf="menu.dia=='MARTES'">{{menu.desayuno.nombre}}</tr>
+                <tr *ngIf="menu.dia=='MARTES'">{{menu.comida.nombre}}</tr>
+                <tr *ngIf="menu.dia=='MARTES'">{{menu.cena.nombre}}</tr>
+            </ng-template>
+        </p-table>
+        <!--<button pButton label="Ver"  (click)="pageRegistro()"></button>-->
+        <button pButton label="Ver" (click)="verMenu('MARTES')"></button>
+    </p-fieldset>
+    <p-fieldset legend="Miercoles">
+        <p-table [value]="menuSemanal.menus" responsiveLayout="scroll">
+            <ng-template pTemplate="body" let-menu>
+                <tr *ngIf="menu.dia=='MIERCOLES'">{{menu.desayuno.nombre}}</tr>
+                <tr *ngIf="menu.dia=='MIERCOLES'">{{menu.comida.nombre}}</tr>
+                <tr *ngIf="menu.dia=='MIERCOLES'">{{menu.cena.nombre}}</tr>
+            </ng-template>
+        </p-table>
+        <!--<button pButton label="Ver"  (click)="pageRegistro()"></button>-->
+        <button pButton label="Ver" (click)="verMenu('MIERCOLES')"></button>
+    </p-fieldset>
+    <p-fieldset legend="Jueves">
+        <p-table [value]="menuSemanal.menus" responsiveLayout="scroll">
+            <ng-template pTemplate="body" let-menu>
+                <tr *ngIf="menu.dia=='JUEVES'">{{menu.desayuno.nombre}}</tr>
+                <tr *ngIf="menu.dia=='JUEVES'">{{menu.comida.nombre}}</tr>
+                <tr *ngIf="menu.dia=='JUEVES'">{{menu.cena.nombre}}</tr>
+            </ng-template>
+        </p-table>
+        <!--<button pButton label="Ver"  (click)="pageRegistro()"></button>-->
+        <button pButton label="Ver" (click)="verMenu('JUEVES')"></button>
+    </p-fieldset>
+    <p-fieldset legend="Viernes">
+        <p-table [value]="menuSemanal.menus" responsiveLayout="scroll">
+            <ng-template pTemplate="body" let-menu>
+                <tr *ngIf="menu.dia=='VIERNES'">{{menu.desayuno.nombre}}</tr>
+                <tr *ngIf="menu.dia=='VIERNES'">{{menu.comida.nombre}}</tr>
+                <tr *ngIf="menu.dia=='VIERNES'">{{menu.cena.nombre}}</tr>
+            </ng-template>
+        </p-table>
+        <!--<button pButton label="Ver"  (click)="pageRegistro()"></button>-->
+        <button pButton label="Ver" (click)="verMenu('VIERNES')"></button>
+    </p-fieldset>
+</main>
+  
+<footer>
+    <button pButton label="Generar Menú Semanal" (click)="generarMenuSemanal()"></button>
+    <button pButton label="Guardar" (click)="guardarMenuSemanal()"></button>
+</footer>  
